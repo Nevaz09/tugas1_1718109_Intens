@@ -11,38 +11,38 @@
     tools:context="com.bacacoding.rumusbgn.MainActivity">
 
     <TextView
-        android:text="Luas Segitiga"
+        android:id="@+id/txt_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
-        android:id="@+id/txt_judul"
+        android:text="Luas Segitiga"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="18sp" />
 
     <TextView
-        android:text="Rumus = 1/2 X a X t"
+        android:id="@+id/txt_rumus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/txt_rumus"
         android:layout_below="@+id/txt_judul"
-        android:layout_alignLeft="@+id/txt_alas"
         android:layout_alignStart="@+id/txt_alas"
+        android:layout_alignLeft="@+id/txt_alas"
+        android:layout_marginTop="20dp"
+        android:text="Rumus = 1/2 X a X t"
         android:textColor="@android:color/background_dark" />
 
     <TextView
-        android:text="Alas"
+        android:id="@+id/txt_alas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp"
-        android:id="@+id/txt_alas"
         android:layout_alignBaseline="@+id/alas"
         android:layout_alignBottom="@+id/alas"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:text="Alas"
         android:textColor="@android:color/holo_blue_light" />
 
     <TextView
@@ -57,30 +57,30 @@
         android:textColor="@android:color/holo_blue_light" />
 
     <EditText
+        android:id="@+id/alas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Masukkan Alas"
-        android:ems="10"
         android:layout_below="@+id/txt_rumus"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="22dp"
-        android:layout_marginEnd="22dp"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="22dp"
-        android:id="@+id/alas" />
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:ems="10"
+        android:hint="Masukkan Alas"
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/tinggi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Massukkan Tinggi"
-        android:ems="10"
         android:layout_below="@+id/alas"
-        android:layout_alignLeft="@+id/alas"
         android:layout_alignStart="@+id/alas"
+        android:layout_alignLeft="@+id/alas"
         android:layout_marginTop="10dp"
-        android:id="@+id/tinggi" />
+        android:ems="10"
+        android:hint="Massukkan Tinggi"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btn_hitung"
@@ -93,16 +93,16 @@
 
     <TextView
 
-        android:text="Luas Segitiga Adalah :"
+        android:id="@+id/txt_hasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
-        android:id="@+id/txt_hasil"
         android:layout_below="@+id/btn_hitung"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="59dp"
+        android:text="Luas Segitiga Adalah :"
         android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="18sp" />
 
 </RelativeLayout>
